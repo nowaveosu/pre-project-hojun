@@ -11,8 +11,6 @@ const Header = () => {
         height: 50px;
         border-top : 3px solid orange;
 
-
-
     `;
     const Logo = styled.img`
         width: 150px;
@@ -35,23 +33,24 @@ const Header = () => {
         padding-right: 22px;
         color : black;
         white-space: nowrap;
+        text-decoration-line: none;
     
     `;
     const Input = styled.input`
         width : 300px;
         height : 30px;
         margin-right : 5px;
-        border-radius : 5px;
+        border-radius : 3px;
         border : 1px solid gray;
     `
     const Button = styled.button`
-        height : 35px;
+        height : 34px;
         display: flex;
         justify-content: center;
         align-items: center;
         border : 1px solid #008ffc;
         margin-right : 5px;
-        border-radius : 5px;
+        border-radius : 3px;
         white-space: nowrap;
         &.login{
             background-color : #bde3fc;
@@ -68,9 +67,9 @@ const Header = () => {
         <HeaderWrapper>
             <Logo className='largeLogo' src={largeLogo} />
             <Logo className='smallLogo' src={smallLogo} />
-            <Menu>About</Menu>
-            <Menu>Products</Menu>
-            <Menu>For Teams</Menu>
+            <Menu href="About.js">About</Menu>
+            <Menu href="Products.js">Products</Menu>
+            <Menu href="ForTeams">For Teams</Menu>
             <Input placeholder='🔍 Search...'></Input>
             <Button className='login'>Log in</Button>
             <Button className='signup'>Sign up</Button>
